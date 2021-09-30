@@ -8,7 +8,15 @@
 int main(void)
 {
 
-__asm("SVC #8");		// Calling the SVC exception
+// Calling the SVC exception
+__asm("SVC #8");
+
+// assigning the contents of R0 to data variable
+uint32_t data;
+__asm volatile("MOV %0,R0":"=r"(data) ::);
+
+printf(" New svc number = %d ", data);
+
 for(;;);
 
 }
@@ -34,6 +42,11 @@ void SVC_Handler_c(uint32_t * pBaseOfStackFrame)
 	uint8_t svc_number = *pReturn_addr;
 
 	printf("The SVC number is = %d \n", svc_number);
+
+	svc_number = svc_number + 4;
+
+	//Storing the value of the svc_number in the r0 register
+	pBaseOfStackFrame[0] = svc_number;
 
 
 }

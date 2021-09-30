@@ -1,3 +1,0 @@
-007SVC.c:8:5:main	4	static,ignoring_inline_asm
-007SVC.c:16:29:SVC_Handler	0	static,ignoring_inline_asm
-007SVC.c:24:6:SVC_Handler_c	24	static

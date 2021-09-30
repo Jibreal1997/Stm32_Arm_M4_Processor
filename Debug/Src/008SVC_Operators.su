@@ -1,0 +1,7 @@
+008SVC_Operators.c:13:9:add_numbers	24	static,ignoring_inline_asm
+008SVC_Operators.c:27:9:sub_numbers	24	static,ignoring_inline_asm
+008SVC_Operators.c:42:9:mul_numbers	24	static,ignoring_inline_asm
+008SVC_Operators.c:58:9:div_numbers	24	static,ignoring_inline_asm
+008SVC_Operators.c:73:5:main	16	static
+008SVC_Operators.c:96:29:SVC_Handler	0	static,ignoring_inline_asm
+008SVC_Operators.c:104:6:SVC_Handler_c	40	static
